@@ -172,13 +172,13 @@ void main() {
                   ],
                 ),
               ),
-            )
-            ,FormularioConfig(
-            )
+            ),
+            FormularioConfig()
           ],
         ),
       )));
 }
+
 class FormularioConfig extends StatefulWidget {
   FormularioConfig({Key key}) : super(key: key);
 
