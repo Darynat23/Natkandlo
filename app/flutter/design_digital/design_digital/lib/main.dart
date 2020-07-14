@@ -167,7 +167,12 @@ void main() {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(bottom: 8.0),
-                      child: Icon(Icons.accessibility),
+                      child: Column(
+                        children: [
+                          CircleAvatar(backgroundImage: AssetImage('image.png')
+                            ,)
+                        ],
+                      )
                     ),
                   ],
                 ),
@@ -208,6 +213,62 @@ class _MyStatefulWidgetStateConfig extends State<FormularioConfig> {
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Complete su nombre';
+                }
+                return null;
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 9.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: 'Apellido',
+              ),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Complete su apellido';
+                }
+                return null;
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 9.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: 'Correo',
+              ),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Complete su Correo';
+                }
+                return null;
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 9.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: 'Genero',
+              ),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Complete su genero';
+                }
+                return null;
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 9.0),
+            child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: 'Direccion',
+              ),
+              validator: (value) {
+                if (value.isEmpty) {
+                  return 'Complete su direccion';
                 }
                 return null;
               },
