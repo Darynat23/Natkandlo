@@ -9,10 +9,10 @@ void main() {
 
       theme: ThemeData(fontFamily: "Georgia"),
       routes: <String, WidgetBuilder>{
-//        '/': (BuildContext context) => Register(),
+        '/': (BuildContext context) => Register(),
         '/account': (BuildContext context) => Account(),
       },
-      home: Register()
+//      home: Register()
   )
   );
 }

@@ -19,8 +19,7 @@ class Navigation extends StatelessWidget{
                 child: ListTile(
                   title: Text('Inicio'),
                   onTap: (){
-
-
+                    Navigator.of(context).pushNamed('/');
                   },
                 ),
               ),
@@ -28,8 +27,7 @@ class Navigation extends StatelessWidget{
                 child: ListTile(
                   title: Text('Cuenta'),
                   onTap: (){
-
-
+                    Navigator.of(context).pushNamed('/account');
                   },
 
                 ),
