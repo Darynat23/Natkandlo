@@ -152,6 +152,60 @@ void main() {
       theme: ThemeData(fontFamily: "Georgia"),
       home: Scaffold(
         appBar: AppBar(backgroundColor: Color(0xffFEB294)),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(child: Text('Natkandlo'),
+                decoration: BoxDecoration(
+                  color: Color(0xffFEB294)
+                ),
+              ),
+
+              Column(
+                children: <Widget>[
+                  Center(
+                    child: ListTile(
+                      title: Text('Inicio'),
+                      onTap: (){
+
+
+                      },
+                    ),
+                  ),
+                  Center(
+                    child: ListTile(
+                      title: Text('Cuenta'),
+                      onTap: (){
+
+
+                      },
+
+                    ),
+                  ),
+                  Center(
+                    child: ListTile(
+                      title: Text('Biblioteca'),
+                      onTap: (){
+
+
+                      },
+                    ),
+                  ),
+                  Center(
+                    child: ListTile(
+                      title: Text('Creacion'),
+                      onTap: (){
+
+
+                      },
+                    ),
+                  ),
+                ],
+              )
+
+            ],
+          ),
+        ),
         body: Column(
           children: [
             Container(
@@ -309,13 +363,14 @@ class _MyStatefulWidgetStateConfig extends State<FormularioConfig> {
     );
   }
 }
+
 final _formKey = GlobalKey<FormState>();
 
 Widget build(BuildContext context) {
   return Form(
       key: _formKey,
       child:
-      Row(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
+          Row(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 12.0),
           child: TextFormField(
@@ -332,4 +387,3 @@ Widget build(BuildContext context) {
         )
       ]));
 }
-
