@@ -185,7 +185,6 @@ void main() {
         ),
       )));
 }
-
 class FormularioConfig extends StatefulWidget {
   FormularioConfig({Key key}) : super(key: key);
 

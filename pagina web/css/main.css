@@ -29,7 +29,7 @@
 /* line 21, ../sass/_partials/_layouts.scss */
 a:focus,
 input:focus,
-textarea:focus,
+textarea:focus,<img src="img/bg-2.jpg" width="300"height="200"/>
 button:focus,
 form input[type="button"]:focus,
 form input[type="email"]:focus {
