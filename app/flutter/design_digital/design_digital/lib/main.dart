@@ -173,8 +173,8 @@ void main() {
                         child: Column(
                           children: [
                             Container(
-                                width: 100.0,
-                                height: 100.0,
+                                width: 120.0,
+                                height: 120.0,
                                 decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     image: DecorationImage(
