@@ -36,8 +36,7 @@ class Navigation extends StatelessWidget{
                 child: ListTile(
                   title: Text('Biblioteca'),
                   onTap: (){
-
-
+                    Navigator.of(context).pushNamed('/library');
                   },
                 ),
               ),
