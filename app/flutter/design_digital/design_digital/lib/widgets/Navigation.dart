@@ -48,6 +48,15 @@ class Navigation extends StatelessWidget{
 
                   },
                 ),
+
+              ),
+              Center(
+                child: ListTile(
+                  title: Text('Login'),
+                  onTap: (){
+                    Navigator.of(context).pushNamed('/auth');
+                  },
+                ),
               ),
             ],
           )
