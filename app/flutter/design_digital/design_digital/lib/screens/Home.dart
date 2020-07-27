@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Iniciar Sesion",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
               ),
             ),
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Registrarse",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
                 ),
               ),
             ),

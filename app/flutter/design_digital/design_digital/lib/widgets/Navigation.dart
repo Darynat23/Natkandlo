@@ -52,9 +52,9 @@ class Navigation extends StatelessWidget{
               ),
               Center(
                 child: ListTile(
-                  title: Text('Login'),
+                  title: Text('producto'),
                   onTap: (){
-                    Navigator.of(context).pushNamed('/auth');
+                    Navigator.of(context).pushNamed('/product');
                   },
                 ),
               ),

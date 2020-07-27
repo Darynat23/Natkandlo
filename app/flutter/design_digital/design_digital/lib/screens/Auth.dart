@@ -48,7 +48,7 @@ class SignInState extends State<SignIn> {
 
 
     if (_currentUser == null) {
-      _googleSignIn.signIn();
+//      _googleSignIn.signIn();
     }
 
   }

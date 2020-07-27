@@ -15,6 +15,7 @@ void main() {
       '/account': (BuildContext context) => Account(),
       '/library': (BuildContext context) => NewScreen(),
       '/auth': (BuildContext context) => AuthScreen(),
+      '/product': (BuildContext context) => NewScreen(),
     },
   ));
 }
