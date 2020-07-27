@@ -17,6 +17,11 @@ class NewScreen extends StatelessWidget {
         ),
         body: Column(children: [
           Container(
+            decoration: BoxDecoration(
+        gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [Colors.teal, Colors.red])),
             child: Center(
               child: Column(children: [
                 Padding(
