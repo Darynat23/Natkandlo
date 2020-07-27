@@ -73,7 +73,32 @@ class Product extends StatelessWidget {
                                'Activo',
                            style: TextStyle(fontSize: 17),
                            )
-                         ],),)
+                         ],),),
+                         Container(
+                           child: Column(
+                             children: [
+                               Padding(padding: const EdgeInsets.only(top: 10.0),
+                               child: Column(children: [
+                                 Text(
+                                   'Caracteristicas:',
+                                 style:  TextStyle(fontSize: 18),
+                                 ),
+                                 Text(
+                                   'Tipo:Algodon',
+                                   style:  TextStyle(fontSize: 17),
+                                 ),
+                                 Text(
+                                   'Colores:Negro y blanco',
+                                   style:  TextStyle(fontSize: 17),
+                                 ),Text(
+                                   'Medidas:45cm pecho, 50 cm largo, 57cm largo',
+                                   style:  TextStyle(fontSize: 17),
+                                 ),
+                               ],
+                               ))
+                             ],
+                           ),
+                         )
                        ],
                      ),
                    )
