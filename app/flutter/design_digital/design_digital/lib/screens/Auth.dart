@@ -22,6 +22,7 @@ class SignIn extends StatefulWidget {
 
 class _SignInState extends State<SignIn> {
   bool isAuthenticated = isAuth();
+
   @override
   Widget build(BuildContext context) {
     return Container(
