@@ -12,7 +12,6 @@ class Navigation extends StatelessWidget{
                 color: Color(0xffFEB294)
             ),
           ),
-
           Column(
             children: <Widget>[
               Center(
@@ -37,6 +36,14 @@ class Navigation extends StatelessWidget{
                   title: Text('Biblioteca'),
                   onTap: (){
                     Navigator.of(context).pushNamed('/library');
+                  },
+                ),
+              ),
+              Center(
+                child: ListTile(
+                  title: Text('Producto'),
+                  onTap: (){
+                    Navigator.of(context).pushNamed('/product');
                   },
                 ),
               ),

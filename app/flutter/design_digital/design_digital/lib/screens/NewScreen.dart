@@ -21,7 +21,7 @@ class NewScreen extends StatelessWidget {
         gradient: LinearGradient(
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
-            colors: [Colors.teal, Colors.red])),
+            colors: [Colors.deepOrangeAccent, Colors.white])),
             child: Center(
               child: Column(children: [
                 Padding(
@@ -46,7 +46,7 @@ class NewScreen extends StatelessWidget {
                               padding: const EdgeInsets.only(top: 10.0),
                               child: Column(children: [
                                 Text(
-                                  'Nombre: Black and White',
+                                  'Nombre:Black and White',
                                   style: TextStyle(fontSize: 17),
                                 ),
                                 Text(
