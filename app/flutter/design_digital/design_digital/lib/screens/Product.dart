@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:design_digital/widgets/HeadBar.dart';
 import 'package:flutter/cupertino.dart';
