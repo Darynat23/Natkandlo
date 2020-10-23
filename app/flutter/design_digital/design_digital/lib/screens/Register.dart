@@ -1,3 +1,4 @@
+import 'package:design_digital/utils/https_request.dart';
 import 'package:design_digital/widgets/Navigation.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,7 @@ class Formulario extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<Formulario> {
   final _formKey = GlobalKey<FormState>();
+  final Map<String, dynamic> formData = {'email': null, 'clave': null, 'nombre':null, 'apellido':null, 'nombre_usuario': null};
 
   @override
   Widget build(BuildContext context) {
@@ -68,6 +70,9 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Nombre',
               ),
+              onSaved: (String value){
+                formData['nombre']= value;
+              },
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Complete su nombre';
@@ -82,6 +87,9 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Apellidos',
               ),
+              onSaved: (String value){
+                formData['apellido']= value;
+              },
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Complete sus apellidos';
@@ -96,6 +104,9 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Correo',
               ),
+              onSaved: (String value){
+                formData['email']= value;
+              },
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Complete su correo';
@@ -110,6 +121,9 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Nombre de usuario',
               ),
+              onSaved: (String value){
+                formData['nombre_usuario']= value;
+              },
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Complete su nombre de usuario';
@@ -124,6 +138,9 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Clave',
               ),
+              onSaved: (String value){
+                formData['clave']= value;
+              },
               validator: (value) {
                 if (value.isEmpty) {
                   return 'Complete su clave';
@@ -139,7 +156,10 @@ class _MyStatefulWidgetState extends State<Formulario> {
                 // Validate will return true if the form is valid, or false if
                 // the form is invalid.
                 if (_formKey.currentState.validate()) {
+                  _formKey.currentState.save();
+                  print(formData);
                   // Process data.
+                  http_registro(formData);
                 }
               },
               child: Text('Enviar'),

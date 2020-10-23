@@ -51,26 +51,14 @@ class Navigation extends StatelessWidget{
                 child: ListTile(
                   title: Text('Creacion'),
                   onTap: (){
-
-
                   },
                 ),
 
-              ),
-              Center(
-                child: ListTile(
-                  title: Text('producto'),
-                  onTap: (){
-                    Navigator.of(context).pushNamed('/product');
-                  },
-                ),
               ),
             ],
           )
-
         ],
       ),
     );
   }
-
 }
