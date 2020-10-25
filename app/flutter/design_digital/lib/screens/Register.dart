@@ -6,9 +6,9 @@ Widget Registro() {
   return Scaffold(
     appBar: AppBar(backgroundColor: Color(0xffFEB294)),
     drawer: Navigation(),
-    body: Container(
-      color: Color(0xffFEB294),
-      child: SingleChildScrollView(
+    body: SingleChildScrollView(
+      child: Container(
+        color: Color(0xffFEB294),
         child: Column(
           children: [
             titulo(),

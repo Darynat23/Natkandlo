@@ -15,11 +15,11 @@ class Library extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Color(0xffFEB294),
       ),
-      body: Column(
-        children: [
-          Container(
-            child: Center(
-              child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              child: Center(
                 child: Column(children: [
                   Padding(
                       padding: const EdgeInsets.only(bottom: 17.0, top: 12.0),
@@ -136,8 +136,8 @@ class Library extends StatelessWidget {
                 ]),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

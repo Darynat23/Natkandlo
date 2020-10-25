@@ -47,7 +47,10 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Iniciar Sesion",
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ),
             ),
@@ -66,7 +69,10 @@ class _HomeState extends State<Home> {
                 padding: const EdgeInsets.all(15.0),
                 child: Text(
                   "Registrarse",
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ),
             ),
@@ -79,26 +85,29 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Color(0xffFEB294), Color(0xffC47878)],
-              begin: FractionalOffset.topCenter,
-              end: FractionalOffset.bottomCenter),
-        ),
-        child: Column(
-          children: <Widget>[
-            Padding(
-                padding: const EdgeInsets.only(top: 300.0, bottom: 50),
-                child: animation(
-                  Center(
-                      child: Text(
-                    "Natkandlo",
-                    style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+      body: SingleChildScrollView(
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [Color(0xffFEB294), Color(0xffC47878)],
+                begin: FractionalOffset.topCenter,
+                end: FractionalOffset.bottomCenter),
+          ),
+          child: Column(
+            children: <Widget>[
+              Padding(
+                  padding: const EdgeInsets.only(top: 300.0, bottom: 50),
+                  child: animation(
+                    Center(
+                        child: Text(
+                      "Natkandlo",
+                      style:
+                          TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                    )),
                   )),
-                )),
-            (_finishStartAnimation ? switchView() : null)
-          ].where((child) => child != null).toList(),
+              (_finishStartAnimation ? switchView() : null)
+            ].where((child) => child != null).toList(),
+          ),
         ),
       ),
     );
