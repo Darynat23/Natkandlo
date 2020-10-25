@@ -1,7 +1,5 @@
 import 'dart:ui';
 
-import 'package:design_digital/widgets/HeadBar.dart';
-import 'package:design_digital/widgets/Navigation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -9,7 +7,6 @@ import 'package:flutter/widgets.dart';
 class Library extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       backgroundColor: Color(0xffFEB294),
       appBar: AppBar(

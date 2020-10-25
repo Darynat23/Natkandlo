@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-PreferredSizeWidget HeadBar(){
-    return AppBar(backgroundColor: Color(0xffFEB294));
+PreferredSizeWidget headBar() {
+  return AppBar(backgroundColor: Color(0xffFEB294));
 }
