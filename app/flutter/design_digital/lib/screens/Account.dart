@@ -21,20 +21,21 @@ class Account extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                      padding: const EdgeInsets.only(bottom: 6.0),
-                      child: Column(
-                        children: [
-                          Container(
-                              width: 100.0,
-                              height: 100.0,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: NetworkImage(
-                                          'https://image.freepik.com/fotos-gratis/jovem-mulher-com-um-grande-sorriso_1098-1592.jpg')))),
-                        ],
-                      )),
+                    padding: const EdgeInsets.only(bottom: 6.0),
+                    child: Column(
+                      children: [
+                        Container(
+                            width: 100.0,
+                            height: 100.0,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: NetworkImage(
+                                        'https://image.freepik.com/fotos-gratis/jovem-mulher-com-um-grande-sorriso_1098-1592.jpg')))),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),

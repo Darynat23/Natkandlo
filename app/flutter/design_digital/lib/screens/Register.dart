@@ -35,7 +35,7 @@ Widget Registro() {
 
 Widget titulo() {
   return Padding(
-    padding: const EdgeInsets.only(top: 30),
+    padding: const EdgeInsets.only(top: 25),
     child: Center(
       child: Text(
         "Registrarte",
@@ -73,7 +73,7 @@ class _MyStatefulWidgetState extends State<Formulario> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12.0),
+            padding: const EdgeInsets.symmetric(vertical: 9.0),
             child: TextFormField(
               decoration: const InputDecoration(
                 hintText: 'Nombre',
