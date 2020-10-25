@@ -23,10 +23,10 @@ void httpLogin(String user, String password) async {
   if (response.statusCode == 200) {
     var user = convert.jsonDecode(response.body);
     await FlutterSession().set('nombre_usuario', user['nombre_usuario']);
-    await FlutterSession().set('nombres', user);
-    await FlutterSession().set('apellidos', user);
-    await FlutterSession().set('correo', user);
-    await FlutterSession().set('idusuario', user);
+    await FlutterSession().set('nombres', user['nombres']);
+    await FlutterSession().set('apellidos', user['apellidos']);
+    await FlutterSession().set('correo', user['correo']);
+    await FlutterSession().set('idusuario', user['idusuario']);
   } else {
     print('Request failed with status: ${response.statusCode}.');
   }
