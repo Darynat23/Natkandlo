@@ -10,10 +10,10 @@ class Account extends StatelessWidget {
       body: Column(
         children: [
           Container(
-            child: Center(
-              child: Column(
-                children: [
-                  Padding(
+             child: Center(
+                  child: Column(
+                  children: [
+                   Padding(
                     padding: const EdgeInsets.only(bottom: 19.0, top: 15.0),
                     child: Text(
                       'Nombre de usuario',
@@ -34,11 +34,11 @@ class Account extends StatelessWidget {
                                       image: NetworkImage(
                                           'https://image.freepik.com/fotos-gratis/jovem-mulher-com-um-grande-sorriso_1098-1592.jpg')))),
                         ],
-                      )),
-                ],
+                      ),
+                  )],
               ),
             ),
-          ),
+           ),
           FormularioConfig()
         ],
       ),

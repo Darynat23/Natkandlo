@@ -17,15 +17,11 @@ class Library extends StatelessWidget {
         ),
         body: Column(children: [
           Container(
-            decoration: BoxDecoration(
-        gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: [Colors.deepOrangeAccent, Colors.white])),
-            child: Center(
+              child: Center(
+          child:SingleChildScrollView(
               child: Column(children: [
                 Padding(
-                    padding: const EdgeInsets.only(bottom: 19.0, top: 15.0),
+                    padding: const EdgeInsets.only(bottom: 17.0, top: 12.0),
                     child: Text('Biblioteca', style: TextStyle(fontSize: 22))),
                 Padding(
                   padding: const EdgeInsets.only(top: 20.0),
@@ -137,7 +133,10 @@ class Library extends StatelessWidget {
                 )
               ]),
             ),
-          )
-        ]));
+            ),
+          ),
+        ],
+        ),
+    );
   }
 }

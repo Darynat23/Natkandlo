@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:design_digital/screens/Home.dart';
 
-class LoginScreen extends StatefulWidget {
+class AuthScreen extends StatefulWidget {
   static Route<dynamic> route() {
     return MaterialPageRoute(
-      builder: (context) => LoginScreen(),
+      builder: (context) => AuthScreen(),
     );
   }
 
@@ -12,7 +12,7 @@ class LoginScreen extends StatefulWidget {
   _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen>
+class _LoginScreenState extends State<AuthScreen>
     with SingleTickerProviderStateMixin {
   AnimationController controller;
   Animation<double> animation;

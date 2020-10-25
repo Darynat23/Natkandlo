@@ -8,7 +8,8 @@ Widget Registro() {
     drawer: Navigation(),
     body: Container(
       color: Color(0xffFEB294),
-      child: Column(
+      child:SingleChildScrollView(
+        child: Column(
         children: [
           titulo(),
           Center(
@@ -28,12 +29,12 @@ Widget Registro() {
         ],
       ),
     ),
-  );
+  ));
 }
 
 Widget titulo() {
   return Padding(
-    padding: const EdgeInsets.only(top: 30),
+    padding: const EdgeInsets.only(top: 25),
     child: Center(
       child: Text(
         "Registrarte",
@@ -71,7 +72,7 @@ class _MyStatefulWidgetState extends State<Formulario> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12.0),
+            padding: const EdgeInsets.symmetric(vertical: 9.0),
             child: TextFormField(
               decoration: const InputDecoration(
                 hintText: 'Nombre',
