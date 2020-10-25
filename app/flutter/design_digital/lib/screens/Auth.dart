@@ -1,7 +1,6 @@
 import 'package:design_digital/utils/https_request.dart';
 import 'package:design_digital/widgets/Navigation.dart';
 import 'package:flutter/material.dart';
-import 'package:design_digital/screens/Home.dart';
 
 class AuthScreen extends StatefulWidget {
   @override

@@ -8,8 +8,6 @@ const designs = phpServer + '/disenios';
 
 void httpRegistro(Map<String, dynamic> formData) async {
   var response = await http.post(users, body: convert.jsonEncode(formData));
-  print(response);
-
   if (response.statusCode == 200) {
     var jsonResponse = convert.jsonDecode(response.body);
     print(jsonResponse);
@@ -24,8 +22,11 @@ void httpLogin(String user, String password) async {
       await http.post(users + '/login', body: convert.jsonEncode(data));
   if (response.statusCode == 200) {
     var user = convert.jsonDecode(response.body);
-    // await FlutterSession().set('user', user);
-    print(user);
+    await FlutterSession().set('nombre_usuario', user['nombre_usuario']);
+    await FlutterSession().set('nombres', user['nombres']);
+    await FlutterSession().set('apellidos', user['apellidos']);
+    await FlutterSession().set('correo', user['correo']);
+    await FlutterSession().set('idusuario', user['idusuario']);
   } else {
     print('Request failed with status: ${response.statusCode}.');
   }
