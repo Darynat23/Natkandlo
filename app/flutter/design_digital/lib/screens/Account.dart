@@ -10,10 +10,10 @@ class Account extends StatelessWidget {
       body: Column(
         children: [
           Container(
-             child: Center(
-                  child: Column(
-                  children: [
-                   Padding(
+            child: Center(
+              child: Column(
+                children: [
+                  Padding(
                     padding: const EdgeInsets.only(bottom: 19.0, top: 15.0),
                     child: Text(
                       'Nombre de usuario',
@@ -21,24 +21,25 @@ class Account extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                      padding: const EdgeInsets.only(bottom: 6.0),
-                      child: Column(
-                        children: [
-                          Container(
-                              width: 100.0,
-                              height: 100.0,
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: NetworkImage(
-                                          'https://image.freepik.com/fotos-gratis/jovem-mulher-com-um-grande-sorriso_1098-1592.jpg')))),
-                        ],
-                      ),
-                  )],
+                    padding: const EdgeInsets.only(bottom: 6.0),
+                    child: Column(
+                      children: [
+                        Container(
+                            width: 100.0,
+                            height: 100.0,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                image: DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: NetworkImage(
+                                        'https://image.freepik.com/fotos-gratis/jovem-mulher-com-um-grande-sorriso_1098-1592.jpg')))),
+                      ],
+                    ),
+                  )
+                ],
               ),
             ),
-           ),
+          ),
           FormularioConfig()
         ],
       ),

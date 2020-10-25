@@ -8,28 +8,29 @@ Widget Registro() {
     drawer: Navigation(),
     body: Container(
       color: Color(0xffFEB294),
-      child:SingleChildScrollView(
+      child: SingleChildScrollView(
         child: Column(
-        children: [
-          titulo(),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 50.0),
-              child: Container(
-                width: 300,
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-                  child: Formulario(),
+          children: [
+            titulo(),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 50.0),
+                child: Container(
+                  width: 300,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 20, horizontal: 40),
+                    child: Formulario(),
+                  ),
+                  color: Color.fromRGBO(243, 243, 243, 0.75),
                 ),
-                color: Color.fromRGBO(243, 243, 243, 0.75),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     ),
-  ));
+  );
 }
 
 Widget titulo() {
@@ -164,8 +165,6 @@ class _MyStatefulWidgetState extends State<Formulario> {
                 // the form is invalid.
                 if (_formKey.currentState.validate()) {
                   _formKey.currentState.save();
-                  print(formData);
-                  // Process data.
                   httpRegistro(formData);
                 }
               },
