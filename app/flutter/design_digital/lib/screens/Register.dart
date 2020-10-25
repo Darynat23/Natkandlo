@@ -55,7 +55,13 @@ class Formulario extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<Formulario> {
   final _formKey = GlobalKey<FormState>();
-  final Map<String, dynamic> formData = {'email': null, 'clave': null, 'nombre':null, 'apellido':null, 'nombre_usuario': null};
+  final Map<String, dynamic> formData = {
+    'email': null,
+    'clave': null,
+    'nombre': null,
+    'apellido': null,
+    'nombre_usuario': null
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -70,8 +76,8 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Nombre',
               ),
-              onSaved: (String value){
-                formData['nombre']= value;
+              onSaved: (String value) {
+                formData['nombre'] = value;
               },
               validator: (value) {
                 if (value.isEmpty) {
@@ -87,8 +93,8 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Apellidos',
               ),
-              onSaved: (String value){
-                formData['apellido']= value;
+              onSaved: (String value) {
+                formData['apellido'] = value;
               },
               validator: (value) {
                 if (value.isEmpty) {
@@ -104,8 +110,8 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Correo',
               ),
-              onSaved: (String value){
-                formData['email']= value;
+              onSaved: (String value) {
+                formData['email'] = value;
               },
               validator: (value) {
                 if (value.isEmpty) {
@@ -121,8 +127,8 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Nombre de usuario',
               ),
-              onSaved: (String value){
-                formData['nombre_usuario']= value;
+              onSaved: (String value) {
+                formData['nombre_usuario'] = value;
               },
               validator: (value) {
                 if (value.isEmpty) {
@@ -138,8 +144,8 @@ class _MyStatefulWidgetState extends State<Formulario> {
               decoration: const InputDecoration(
                 hintText: 'Clave',
               ),
-              onSaved: (String value){
-                formData['clave']= value;
+              onSaved: (String value) {
+                formData['clave'] = value;
               },
               validator: (value) {
                 if (value.isEmpty) {
@@ -159,7 +165,7 @@ class _MyStatefulWidgetState extends State<Formulario> {
                   _formKey.currentState.save();
                   print(formData);
                   // Process data.
-                  http_registro(formData);
+                  httpRegistro(formData);
                 }
               },
               child: Text('Enviar'),
