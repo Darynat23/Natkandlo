@@ -1,7 +1,7 @@
 import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 
-void http_registro(Map<String, dynamic> formData) async {
+void httpRegistro(Map<String, dynamic> formData) async {
   // This example uses the Google Books API to search for books about http.
   // https://developers.google.com/books/docs/overview
   var url = 'http://192.168.0.25:8888/usuarios';
